@@ -1,0 +1,31 @@
+Take this dataset: https://www.kaggle.com/felipeesc/shark-attack-dataset(opens in a new tab). Use all the skills you've learned up until now to answer the following questions as well as possible. 
+
+for all questions only rows which included a date were used
+
+1 - What are the most dangerous types of sharks to humans?
+
+The highest number o f retrievable incident (both lethal and nod-lethal) involve white, tiger and bull sharks in this order.
+To determine which species is actually more dangerous, we would also need to know which species has more members.
+Assumptions: (1) rows which miss a value in the Fatal (Y/N) would show the same distribution
+(2) looking at the word preceding the word shark in column "Species "" is a reliable way of identifying the species
+
+2 - Are children more likely to be attacked by sharks?
+
+NO, the percentage of children (classified as children when younger than 13) attacked by a shark is 8.41, which is far
+below the percentage of children in the world population
+assumptions: 12 is a reasonable cut-ff, string manipulations is correct
+
+
+3 - Are shark attacks where sharks were provoked more or less dangerous?
+
+based on the contingency table provoked shark attacks are less dangerous.
+Assumptions (1) excluded values would not change the distribution, (2) 'unprovoked' is a meaningful concept, which
+probably isn't, since being in the water might count as a provocation to begin with
+
+4 - Are certain activities more likely to result in a shark attack?
+
+We can't answer this question since we do not know how many people engaged in the relevant activities in these areas and
+were NOT attacked by a shark. These are the top 10 activities mentioned in teh database, in descending order:
+['Surfing', 'Swimming', 'Fishing', 'Spearfishing', 'Bathing', 'Wading', 'Diving', 'Standing', 'Snorkeling', 'Scuba diving']
+
+
